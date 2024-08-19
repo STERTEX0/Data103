@@ -6,7 +6,8 @@ const PlacesGridSection = () => {
   const [modalShow, setModalShow] = useState(false);
   const [modalData, setModalData] = useState(null); // เก็บข้อมูล API
   const [cards, setCards] = useState([]); // เก็บข้อมูลการ์ด
-
+  
+  
   // Fetch data when component mounts
   useEffect(() => {
     const fetchData = async () => {
