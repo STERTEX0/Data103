@@ -5,9 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 import './ListWrapper.css'; // Import custom CSS
 
 function ListWrapper() {
-  const [images, setImages] = useState([]); // State to store fetched images
-  const [loading, setLoading] = useState(true); // State to handle loading
-  const [error, setError] = useState(null); // State to handle errors
+  const [images, setImages] = useState([]); 
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null); 
   const sliderRef = useRef(null);
 
   const settings = {
@@ -19,13 +19,12 @@ function ListWrapper() {
   };
 
   useEffect(() => {
-    // Fetch images from the API
     const fetchImages = async () => {
       try {
         const response = await fetch('http://192.168.1.54:3005/data103/getimage');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
-        setImages(data); // Update state with fetched images
+        setImages(data);
       } catch (error) {
         console.error('Error fetching images:', error);
         setError(error);
