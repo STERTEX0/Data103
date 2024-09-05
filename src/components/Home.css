@@ -9,6 +9,10 @@
   background-color: #ffffff;
 }
 
+.grid-headerr{
+  margin-top: 40px;
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;

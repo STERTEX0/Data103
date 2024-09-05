@@ -1,5 +1,3 @@
-// src/components/Home.js
-
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -10,6 +8,7 @@ import LocationGrid from "./LocationGrid";
 import "./Home.css"; // ไฟล์ CSS สำหรับหน้า Home
 
 const Home = () => {
+
   return (
     <div className="home-container">
       <Navbar />
@@ -18,6 +17,15 @@ const Home = () => {
         <ImageTextSection />
         <GridSection />
         <LocationGrid />
+        
+        {/* Header Section */}
+        <div className="grid-header">
+          <h2 className="grid-title">รีวิว</h2>
+  
+        </div>
+        <hr className="grid-divider" />
+
+        {/* YouTube Video Section */}
         <div className="video-section">
           <div className="video-container">
             <iframe
