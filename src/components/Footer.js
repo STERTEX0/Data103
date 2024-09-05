@@ -35,6 +35,11 @@ function Footer() {
                   <i className="fab fa-tiktok"></i>
                 </a>
               </div>
+              <div className="social-icon">
+                <a href="https://www.tiktok.com/@charoenkrung103_market" target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-youtube"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

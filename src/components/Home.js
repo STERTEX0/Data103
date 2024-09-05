@@ -18,6 +18,29 @@ const Home = () => {
         <ImageTextSection />
         <GridSection />
         <LocationGrid />
+        <div className="video-section">
+          <div className="video-container">
+          <iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/sSec6Oxi5nA?si=K61uVjBxc6rxkMFJ" 
+  title="YouTube video player" 
+  frameBorder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerPolicy="strict-origin-when-cross-origin" 
+  allowFullScreen
+></iframe>
+          </div>
+          <div className="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/VIDEO_ID2" 
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
