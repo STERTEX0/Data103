@@ -36,8 +36,13 @@ function Footer() {
                 </a>
               </div>
               <div className="social-icon">
-                <a href="https://www.tiktok.com/@charoenkrung103_market" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.youtube.com/results?search_query=%E0%B9%80%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%8D%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87+103" target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-youtube"></i>
+                </a>
+              </div>
+              <div className="social-icon">
+                <a href="https://charoenkrung103.glide.page/dl/6471c6" target="_blank" rel="noopener noreferrer">
+                <i className="fa-solid fa-cube"></i>
                 </a>
               </div>
             </div>

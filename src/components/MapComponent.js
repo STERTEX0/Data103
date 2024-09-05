@@ -1,6 +1,6 @@
-// MapComponent.js
 import React from 'react';
 import { GoogleMap, Marker, useLoadScript } from '@react-google-maps/api';
+import "./MapComponent.css"
 
 const mapContainerStyle = {
   width: '100%',
@@ -19,15 +19,26 @@ const MapComponent = ({ lat, lng }) => {
 
   if (!isLoaded) return <div>Loading...</div>;
 
+  // ฟังก์ชันเปิด Google Maps พร้อมเส้นทาง
+  const handleGetDirections = () => {
+    const url = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+    window.open(url, '_blank'); // เปิดลิงค์ในแท็บใหม่
+  };
+
   return (
-    <GoogleMap
-      mapContainerStyle={mapContainerStyle}
-      zoom={15}
-      center={{ lat, lng }}
-      options={options}
-    >
-      <Marker position={{ lat, lng }} />
-    </GoogleMap>
+    <div>
+      <GoogleMap
+        mapContainerStyle={mapContainerStyle}
+        zoom={15}
+        center={{ lat, lng }}
+        options={options}
+      >
+        <Marker position={{ lat, lng }} />
+      </GoogleMap>
+      <button onClick={handleGetDirections} className="directions-button">
+        เส้นทาง
+      </button>
+    </div>
   );
 };
 
