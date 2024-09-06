@@ -10,7 +10,7 @@ const ImageTextSection = () => {
     fetch('http://192.168.1.54:3005/data1033/history')
       .then(response => response.json())
       .then(data => {
-        console.log('Fetched data:', data); // Log the data
+       
         // Assuming data is an array and we want the first item
         setData(data[0]);
       })

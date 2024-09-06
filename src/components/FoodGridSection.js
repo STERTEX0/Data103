@@ -14,7 +14,6 @@ const FoodGridSection = () => {
         const response = await fetch('http://192.168.1.54:3005/data103/id_all');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
-        console.log(data); // ตรวจสอบข้อมูลที่ได้รับ
         setCards(data); // Update state with fetched data
       } catch (error) {
         console.error('Error fetching data:', error);
@@ -29,7 +28,6 @@ const FoodGridSection = () => {
       const response = await fetch(`http://192.168.1.54:3005/data103/id/${id}`);
       if (!response.ok) throw new Error('Network response was not ok');
       const [data] = await response.json(); // ดึงข้อมูลจากรายการแรกของอาร์เรย์
-      console.log(data); // ตรวจสอบข้อมูลที่ได้รับ
       setModalData(data);
       setModalShow(true);
     } catch (error) {

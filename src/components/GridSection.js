@@ -17,7 +17,6 @@ const GridSection = () => {
         const response = await fetch('http://192.168.1.54:3005/data103/id_all');
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
-        console.log(data); // Log fetched data
         setCards(data); // Update state with fetched data
       } catch (error) {
         console.error('Error fetching data:', error);
